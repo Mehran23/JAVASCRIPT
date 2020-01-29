@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crookapp</title>
+</head>
+<style>
+    #imageslider1{
+        width: 300px;
+        height: 300px;
+
+
+    }
+    #imageslider2{
+        width: 300px;
+        height: 300px;
+
+        background-color: black;
+
+    }
+    #imageslider3{
+        width: 300px;
+        height: 300px;
+
+        background-color: black;
+
+    }
+</style>
+<body>
+<div id="imageslider1"><img src="aap1.jpg" ></div>
+<div id="imageslider2"><img src="aap2.jpg" ></div>
+<div id="imageslider3"><img src="aap3.jpg"width=></div>
+
+<script>
+    var plaatjes=[0,1,2];
+    var teller=0;
+    var slideholder1= document.getElementById("slideholder1");
+    var slideholder2= document.getElementById("slideholder2");
+    var slideholder3= document.getElementById("slideholder3");
+
+    slideholder1.style.backgroundImage="url('img/aap"+getaap()+".jpg')";
+    slideholder1.style.backgroundImage="url('img/aap2.jpg')";
+    slideholder1.addEventListener("click",function () {
+        getaap();
+
+    })
+    slideholder2.style.backgroundImage="url('img/aap"+getaap()+".jpg')";
+    slideholder2.style.backgroundImage="url('img/aap2.jpg')";
+    slideholder2.addEventListener("click",function () {
+        getaap()
+    })
+</script>
+
+</body>
+</html>
